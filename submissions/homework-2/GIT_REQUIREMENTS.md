@@ -1,6 +1,6 @@
 # Homework 2 — Part 2 Submission
 
-Student name:
+Student name: Ariane Kouame
 
 GitHub username:
 
@@ -8,24 +8,36 @@ GitHub username:
 
 | Command or workflow | What did you observe? | What was the user trying to accomplish? | What problem or risk did it address? |
 |---|---|---|---|
-| 1. |  |  |  |
-| 2. |  |  |  |
-| 3. |  |  |  |
-| 4. |  |  |  |
+| 1.git status |Displayed the current branch and which files were modified, staged, or unstaged.  |The user wanted a quick overview of the current state of the working directory before deciding what to do next  |Prevents committing the wrong files, forgetting to stage something, or losing
+track of unsynced changes with the remote.  |
+| 2.git diff |Showed line-by-line changes made to files in the working directory that had not yet
+been staged.  |The user wanted to review exactly what content had changed before deciding
+whether to stage it.  |Prevents accidentally staging or committing wrong edits, typos  |
+| 3.git add <file> followed by git diff --staged | git add moved specific changes into the staging
+area; git diff --staged then showed only the changes that were staged and ready to be
+committed. |The user wanted to select exactly which changes would go into the next commit,
+and confirm that selection before committing.  | Shows the risk of committing unrelated or
+incomplete changes together. |
+| 4. git commit -m "<message>" followed by git log --oneline -3 |The commit created a
+permanent snapshot with a descriptive message; git log --oneline -3 then listed the most recent
+commits with their short IDs and messages.  |The user wanted to save a meaningful checkpoint
+of their work and verify it was recorded correctly in the project history. || Prevents loss of work,
+supports collaboration by giving teammates a clear history of what changed and why, and allows
+reverting to a specific point if needed.  |
 
 ## 2. User Needs
 
 ### UN-GIT-01 — Short descriptive title
 
-> 
+> Seeing the current state
 
 ### UN-GIT-02 — Short descriptive title
 
-> 
+> Reviewing Changes Before Saving
 
 ### UN-GIT-03 — Short descriptive title
 
-> 
+>Selecting What gets saved Together 
 
 ## 3. User Requirements
 
