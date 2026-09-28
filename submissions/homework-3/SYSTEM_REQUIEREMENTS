@@ -23,7 +23,29 @@ Check: Inspect the error output and the existing staged content to confirm the m
 SR-05 (source UR-GIT-02): Given an initialized project with notes.txt already staged, when status is used, MiniGit shall report that notes.txt is staged so a classmate can verify its file state.
 
 Check: Inspect the error output and the existing staged content to confirm the missing-file error did not change the staged state
+
+# SR-06 (source UR-GIT-02):
+Given an initialized project where notes.txt has been modified after staging, when status is used, MiniGit shall report that notes.txt has changed after staging.
+
+# SR-07 (source UR-GIT-03):
+Given an initialized project where notes.txt contains TWO in the working file and ONE is staged, when diff is used, MiniGit shall display the content difference between the working file and the staged content.
+
+# SR-08 (source UR-GIT-03):
+Given an initialized project where notes.txt contains ONE in the staged content and the latest checkpoint also contains ONE, when diff --staged is used, MiniGit shall show no content difference for notes.txt.
+
+# SR-09 (source UR-GIT-06):
+Given an initialized project with selected content ready for a checkpoint, when commit -m "checkpoint" is used, MiniGit shall create a numbered checkpoint with the selected content and the explanation checkpoint.
+
+# SR-10 (source UR-GIT-04, UR-GIT-05):
+Given an initialized project where notes.txt is staged and plan.txt has later unselected edits, when commit -m "checkpoint" is used, MiniGit shall record the staged notes.txt content while leaving the later edits to plan.txt in the working files.
+
+# SR-11 (source UR-GIT-06):
+Given an initialized project with recorded checkpoints, when log is used, MiniGit shall display the recorded checkpoints from newest to oldest with each checkpoint's identifier and explanation.
+
+# SR-12 (source UR-GIT-07, UR-GIT-08, UR-GIT-09):
+Given an initialized project, when an invalid command or unavailable file is requested, MiniGit shall report a useful error and shall leave existing project files and already recorded checkpoints unchanged.
  
+
 # Approved MiniGit user needs and user requirements
 
 This instructor-approved baseline is the starting point for Homework 3. Homework 2 was practice; students should keep their HW2 work, but use the stable IDs below for HW3–HW6. These statements describe the user's goal and visible capability. They do not specify storage files, hashing, classes, or algorithms.
